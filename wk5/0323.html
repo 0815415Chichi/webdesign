@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>0323</title>
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+$(document).ready(function(){
+$('h2').css('color', 'green');
+$('h2').css('fontSize', '40px');
+}); 
+
+$(document).ready(function(){
+$('div').css('color','red').css('fontSize', '20px');;
+$('#Idname').css('color','blue').css('fontSize', '30px');; 
+$('.Classname').css('color','green').css('fontSize', '40px');;
+});
+$(document).ready(function(){
+$('#dtd').css('color','blue').css('fontSize', '20px');
+$('#dtd').click(function(){ 
+  $('#dtd').css('color','blue').css('fontSize', '40px');
+}); 
+}); 
+$(document).ready(function(){
+$('#dtd2').css('background', 'beige');
+$('#dtd2').click(function(){ 
+$('#dtd2').css('background','yellow');
+}); 
+});
+$(document).ready(function(){
+$("#btn1").click(function(){
+alert("Text: " + $("#test").text()); 
+});
+$("#btn2").click(function(){ alert("HTML: " + $("#test").html());
+}); 
+});
+$(document).ready(function(){
+$( "div" ).html( "<span class='red'>Hello <b>Again</b></span>" );
+});
+$(document).ready(function(){
+ $("#btn1 ").click(function(){
+alert("Value: " + $("#test2").val()); 
+});
+$("#btn2 ").click(function(){
+ $("#test2").val("DTD");
+ }); 
+});
+</script>
+</head> 
+<body>
+<h2>Hi jQuery</h2> 
+<div>div區塊</div>
+<div id="Idname">id=Idname區塊</div>
+<div class="Classname">class=Classname區塊</div>
+<div id="dtd">open chan is cute</div>
+<div id="dtd2"><img class="img-open" src="img/open.jpg"></div>
+<p id="test">This is some <b>bold</b> text in a paragraph.</p> 
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+<p>Name: <input type="text" id="test2" value="Mickey Mouse"></p> 
+<button id="btn1">Show Value</button>
+<button id="btn2">Input Value</button>
+
+<div></div> 
+<div></div> 
+<div></div>
+</body>
+</html>
+</head>
+<body>
